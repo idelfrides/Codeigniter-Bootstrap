@@ -1,5 +1,4 @@
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Idelfrides Jorge and Eric Vinícius">
@@ -31,8 +30,6 @@
         </div>
     </div>
 </div>
-
-
 
 <div class="myborder"></div>
 

@@ -1,29 +1,4 @@
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Idelfrides Jorge and Eric Vinícius">
-    <meta name="description" content="Atividade 02 da disciplina Tecnologias Web - Criar um site usando Bootstrap 4.0">
-    <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("estatico/css/bootstrap.min.css");?>">
-    <link rel="stylesheet" href="<?=base_url("Assets/_css/header-footer-style.css");?>">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-</head>
 <br><br>
 <!-- CAROUSEL-->
 <div id="carouselSite" class="carousel slide pt-5" data-ride="carousel">
@@ -38,7 +13,7 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../../../static/img/slide-01.jpg" class="img-fluid d-block" alt="Alternative text for slide 1">
+            <img src="<?=base_url();?>.static/img/slide-01.jpg" class="img-fluid d-block" alt="Alternative text for slide 1">
             <div class="carousel-caption d-none d-md-block mb-5">
                 <h5 class="text-dark text-uppercase">Encontre sua vaga de uma forma fácil.</h5>
             </div>
@@ -142,12 +117,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="<?=base_url("estatico/js/jquery-3.3.1.min.js");?>"></script>
-<script src="<?=base_url("estatico/js/popper.min.js");?>"></script>
-<script src="<?=base_url("estatico/js/bootstrap.min.js");?>"></script>
 
 
 <br><br><br>

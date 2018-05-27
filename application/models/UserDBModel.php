@@ -6,7 +6,7 @@
  * Time: 21:55
  * Controller de banco de dados. Todas as requisições ao DB passam por UserDBModel
  *
- * -------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * FORMAS DE CONEXÃO COM O DB:
  *  1: application/config/autoload.php - $autoload['libraries'] = array('database','session');
  *  2: Por meio de um construtor -  $this->load->database();
@@ -28,11 +28,27 @@ class UserDBModel extends CI_Model
      * 3 -> Aviso
      */
 
-    public function contactMemberData($dada = null){
+    // salva envia mensagem para um único member
+    public function contactOneMember($dada = null){
         if ($dada == null){
             show_404();     // não será executada
         }else{
              $query = $this->db->insert('membro', $dada);
+        }
+
+        if ($query){
+            redirect('main/view/home/1');   // ok
+        }else{
+            redirect('main/view/home/2');   // config alert aqui: erro ao inserir dados na tabela membro
+        }
+    }
+
+    // guarda envia mensagem para um único member
+    public function contactAllMember($dada = null){
+        if ($dada == null){
+            show_404();     // não será executada
+        }else{
+            $query = $this->db->insert('membro', $dada);
         }
 
         if ($query){

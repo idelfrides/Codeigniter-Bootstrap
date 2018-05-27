@@ -85,6 +85,3 @@
 <script src="<?=base_url("estatico/js/popper.min.js");?>"></script>
 <script src="<?=base_url("estatico/js/bootstrap.min.js");?>"></script>
 <script src="<?=base_url("static/css/header-footer-style");?>"></script>
-
-</body>
-</html>
