@@ -26,3 +26,4 @@
 <script src="<?=base_url("static/js/popper.min.js");?>"></script>
 <script src="<?=base_url("static/js/bootstrap.min.js");?>"></script>
 <script src="<?=base_url("static/css/header-footer-style");?>"></script>
+
