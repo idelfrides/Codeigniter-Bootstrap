@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Idelfrides Jorge and Eric Vinícius">
@@ -6,9 +5,8 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("estatico/css/bootstrap.min.css");?>">
+    <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
     <link rel="stylesheet" href="<?=base_url("Assets/_css/header-footer-style.css");?>">
 
     <!-- Latest compiled and minified CSS -->
@@ -101,15 +99,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="<?=base_url("estatico/js/jquery-3.3.1.min.js");?>"></script>
-<script src="<?=base_url("estatico/js/popper.min.js");?>"></script>
-<script src="<?=base_url("estatico/js/bootstrap.min.js");?>"></script>
+<script src="<?=base_url("static/js/jquery-3.3.1.min.js");?>"></script>
+<script src="<?=base_url("static/js/popper.min.js");?>"></script>
+<script src="<?=base_url("static/js/bootstrap.min.js");?>"></script>
 
 
 <br><br><br>
 <br><br><br>
 <br><br><br>
 
-<br><br><br>
+

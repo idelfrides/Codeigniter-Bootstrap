@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -13,7 +14,8 @@
 class Membro extends CI_Controller
 {
 
-    public function contactMember(){
+    public function contactMember()
+    {
         $dadosForm['nome'] = $this->input->post('InputName');
         $dadosForm['email'] = $this->input->post('InputEmail');
         $dadosForm['destinatario'] = $this->input->post('InputDestinat');
@@ -22,13 +24,14 @@ class Membro extends CI_Controller
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
 
-        if($dadosForm['destinatario'] == 0){
+        if ($dadosForm['destinatario'] == 0) {
 
         }
         $dbo->contactMemberData($dadosForm);
     }
 
-    public function gerMemberData(){
+    public function gerMemberData()
+    {
 
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
@@ -36,5 +39,4 @@ class Membro extends CI_Controller
         print_r($dbo->showData('papai'));
         print_r($dbo->showData('wm'));
     }
-
 }

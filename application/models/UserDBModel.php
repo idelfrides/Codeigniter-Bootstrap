@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -74,6 +75,5 @@ class UserDBModel extends CI_Model
             $this->db->query($sql, array(array(3, 6), 'live', 'Rick'));
         */
     }
-
 
 }
