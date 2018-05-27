@@ -1,0 +1,98 @@
+/* -------------------------------------------------------------
+      This file contain css rules to provide style for the
+      some features of index.html  file - main lyout page
+ --------------------------------------------------------------*/
+
+
+ol li:hover {
+  background-color: #6f42c1;
+  color: white;
+  font-weight: bold;
+  transition-property: margin-left;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  direction: ltr;
+}
+
+.myborder {
+  height: 20px;
+  width: 40%;
+  border-top: 2px solid #495057;
+  margin: auto 30%;
+}
+
+.mybordercopy {
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #6f42c1;
+  margin: 20px 0 30px 0;
+}
+
+#bg-card {
+  background-color: #eee;
+  max-width: 100%;
+  width: 100%;
+}
+
+.myborderCitationTop {
+  height: auto;
+  width: 100%;
+  border-top: 30px solid #6f42c1;
+}
+
+.citacao-bg-transparent {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#citacao-content {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  font-weight: 400;
+  text-align: right;
+  display: inline-block;
+  float: right;
+  margin-top: 15%;
+  margin-right: 10%;
+  /*margin-left: 5%;*/
+  position: relative;
+  font-size: 1.8rem;
+}
+
+
+strong {
+  color: #19C1C3;
+}
+
+label {
+  color: #19C1C3;
+}
+
+button {
+  background-color: #346d8d;
+  color: white;
+}
+
+#navbarSite2 li a:hover {
+  font-weight: 600;
+}
+
+#navbarSite2 li:hover {
+  background-color: #346d8d;
+}
+
+.title-content-page h1 {
+  text-align: center;
+  vertical-align: center;
+}
+
+.carouselSite{
+    max-width: 100%;
+    height: 500px;
+    background: url("../img/slide-02.jpg") no-repeat top center;
+
+}
