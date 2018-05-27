@@ -12,8 +12,8 @@ class Main extends CI_Controller
 
     public function view($page = 'home'){
         if (! file_exists(APPPATH.'views/app_pages/'.$page.'.php')){
-           //show_404();
-            // arquivo não encontrado. redireciona a aplicação para a page Welcome
+            /* Erro 404 -> arquivo não encontrado: redireciona a aplicação
+               para  a page Welcome personalizada */
             redirect("welcome");
         }
 

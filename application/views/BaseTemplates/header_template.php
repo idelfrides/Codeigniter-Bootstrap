@@ -6,7 +6,7 @@
  * Time: 11:42
  *
  * @author: idelfrides Jorge
- * Descrition: this file contain the base header HTML script for all sistem pages
+ * Descrition: this file contain the base header HTML script for all app pages
  */
 
    //session_start();

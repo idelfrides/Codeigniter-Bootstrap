@@ -4,16 +4,23 @@
  * User: idelf
  * Date: 24/05/2018
  * Time: 21:55
+ * Controller de banco de dados. Todas as requisições ao DB passam por UserDBModel
+ *
+ * -------------------------------------------------------------------------------
+ * FORMAS DE CONEXÃO COM O DB:
+ *  1: application/config/autoload.php - $autoload['libraries'] = array('database','session');
+ *  2: Por meio de um construtor -  $this->load->database();
  */
 
 class UserDBModel extends CI_Model
 {
-    // conexao com banco. o mesmo pode ser feito no caminho:
-    // application/config/autoload.php - $autoload['libraries'] = array('database','session');
+    /* Forma 2 de conectar ao DB. Nesta aplicação porém utiliza a forma 1.
+      via arquivo de configuração */
 
     /* public function __construct(){
         $this->load->database();
     }*/
+
 
     /* Códigos de controle de alert:
      * 1 -> Operação realizada c/ sucesso
