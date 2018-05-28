@@ -1,18 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Idelfrides Jorge and Eric Vinícius">
-    <meta name="description" content="Atividade 02 da disciplina Tecnologias Web - Criar um site usando Bootstrap 4.0">
-    <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
-    <link rel="stylesheet" href="<?=base_url("Assets/_css/header-footer-style.css");?>">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-</head>
 
 <br><br><br>
 
@@ -88,25 +73,6 @@
     </div>
 </div>
 
-<!-- Optional JavaScript   -->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="<?=base_url("static/js/jquery-3.3.1.min.js");?>"></script>
-<script src="<?=base_url("static/js/popper.min.js");?>"></script>
-<script src="<?=base_url("static/js/bootstrap.min.js");?>"></script>
-
-
-<br><br><br>
-<br><br><br>
-<br><br><br>
 
 

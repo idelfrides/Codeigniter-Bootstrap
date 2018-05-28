@@ -1,6 +1,6 @@
 <!-- **********************************************************************************
 	Project: This is THE FINAL  ONE on Web Tecnologies subject.
-	     In this project we build my a web sistem using bootstrap 4.0 and others tecnologies
+	     In this project we build my a web system using bootstrap 4.0 and others tecnologies
 
 	Tecnologies used: HTML5, CSS3, BOOTSTRAP 4.0, PHP 7,  JAVASCRIPT, jQUERY and MYSQL
 	@uthors: IDELFRIDES JORGE | ÉRIC VINÍCIUS | GLHAZYANNO BRAGA | JOSÉ MARIA JAIRO
@@ -10,9 +10,8 @@
 *********************************************************************************** -->
 
 
-
     <!-- ***************************************************************
-                    Form vacancies 
+                        Form vacancies
     **************************************************************** -->
     <br><br><br>
     <div class="title-content-page mt-5 pt-3" id="bg-card">

@@ -11,7 +11,6 @@
  */
 ?>
 
-
 <div class="bg-dark">
     <div class="col-12  py-1">
         <div class="mybordercopy"></div>
@@ -20,6 +19,12 @@
         </blockquote>
     </div>
 </div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="<?=base_url("static/js/jquery-3.3.1.min.js");?>"></script>
+<script src="<?=base_url("static/js/popper.min.js");?>"></script>
+<script src="<?=base_url("static/js/bootstrap.min.js");?>"></script>
+<script src="<?=base_url("static/css/header-footer-style");?>"></script>
 
 
 </body>

@@ -10,12 +10,13 @@
  */
 
 
-
 class Membro extends CI_Controller
 {
 
     public function contactMember()
     {
+        $numMember = 4;   // numero de membros
+
         $dadosForm['nome'] = $this->input->post('InputName');
         $dadosForm['email'] = $this->input->post('InputEmail');
         $dadosForm['destinatario'] = $this->input->post('InputDestinat');
@@ -24,15 +25,20 @@ class Membro extends CI_Controller
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
 
-        if ($dadosForm['destinatario'] == 0) {
+        if ($dadosForm['destinatario'] == 0) {   // para todos os membros
 
+            for ($dest = 1; $dest <= $numMember; $dest++ ){
+                $dadosForm['destinatario'] = $dest;
+                $dbo->contactAllMember($dadosForm, 0);  // para todos os membros
+            }
+
+        }else{
+            $dbo->contactOneMember($dadosForm);  // para um só  membro
         }
-        $dbo->contactMemberData($dadosForm);
     }
 
-    public function gerMemberData()
+    public function getMemberData()
     {
-
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
         print_r($dbo->showData('obama'));

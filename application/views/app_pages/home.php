@@ -1,7 +1,5 @@
 
-
 <br><br>
-
 
 <!-- Title page -->
 <div class="container" id="lorem">
@@ -14,7 +12,7 @@
 </div>
 
 <!-- ***************************************************************
-                card section goes here
+                        members section
 **************************************************************** -->
 <div class="title-content-page" id="bg-card">
     <div class="container-fluid pb-5">
@@ -27,7 +25,7 @@
     </div>
 </div>
 
-
+<br>
 <br><br><br>
 <br><br><br>
 <br><br><br>

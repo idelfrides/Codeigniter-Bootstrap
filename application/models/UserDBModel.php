@@ -16,8 +16,8 @@
 class UserDBModel extends CI_Model
 {
     /* Forma 2 de conectar ao DB. Nesta aplicação porém utiliza a forma 1.
-      via arquivo de configuração */
-
+     * via arquivo de configuração
+    /*
     /* public function __construct(){
         $this->load->database();
     }*/
@@ -29,32 +29,29 @@ class UserDBModel extends CI_Model
      * 3 -> Aviso
      */
 
-    // salva envia mensagem para um único member
+    // guarda mensagem enviada para um único membro
     public function contactOneMember($dada = null){
         if ($dada == null){
-            show_404();     // não será executada
+            show_404();                        // não será executada
         }else{
-             $query = $this->db->insert('membro', $dada);
+           $query = $this->db->insert('contatounico', $dada);
         }
-
         if ($query){
-            redirect('main/view/home/1');   // ok
+            redirect('main/view/home/1');   // consulta bem sucedida
         }else{
             redirect('main/view/home/2');   // config alert aqui: erro ao inserir dados na tabela membro
         }
     }
 
-    // guarda envia mensagem para um único member
-    public function contactAllMember($dada = null){
-        if ($dada == null){
-            show_404();     // não será executada
-        }else{
-            $query = $this->db->insert('membro', $dada);
-        }
+    // salva mensagem para todos os membros
+    public function contactAllMember($dada = null, $errorFlag = 0){
+
+        $query = $this->db->insert('contatounico', $dada);
 
         if ($query){
-            redirect('main/view/home/1');   // ok
+            $errorFlag = 0;
         }else{
+            $errorFlag = $errorFlag + 1;
             redirect('main/view/home/2');   // config alert aqui: erro ao inserir dados na tabela membro
         }
     }
