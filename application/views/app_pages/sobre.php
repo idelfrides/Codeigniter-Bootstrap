@@ -16,63 +16,81 @@
 
 <div class="myborder"></div>
 
+
 <!-- ***************************************************************
                 card section goes here
 **************************************************************** -->
-<div class="title-content-page" id="bg-card">
-    <div class="container-fluid pb-5">
+
+<div class="title-content-page mt-5 pt-3" id="bg-card">
+    <div class="container pb-5">
         <div class="row">
-
-            <ul class="list-group col-10  mx-auto">
-                <li class="list-group-item list-group-item-white d-flex justify-content-between align-items-center">
-                    <div>
-                        <small class="text-muted">1 Vaga</small>
-                        <br>
-                        <span style="color:#19C1C3;">
-                                ESTÁGIO: Desenvolvedor Web Junior
-                            </span>
-                    </div>
-                    <div class="badge">
-                        <a href="#">
-                            <button class="btn btn-info">Inscrever-se</button>
-                        </a>
-                    </div>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                        <small class="text-muted">1 Vaga</small>
-                        <br>
-                        <span style="color:#19C1C3;">
-                                ESTÁGIO: Desenvolvedor Web Junior
-                            </span>
-                    </div>
-                    <div class="badge">
-                        <a href="#">
-                            <button class="btn btn-info">Inscrever-se</button>
-                        </a>
-                    </div>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                        <small class="text-muted">1 Vaga</small>
-                        <br>
-                        <span style="color:#19C1C3;">
-                                ESTÁGIO: Desenvolvedor Web Junior
-                            </span>
-                    </div>
-                    <div class="badge">
-                        <a href="#">
-                            <button class="btn btn-info">Inscrever-se</button>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+            <div class="card col-3">
+                <img class="card-img-top" src="http://panificadoramarcelo.cl/wp-content/uploads/2017/02/default-avatar-plaid-shirt-guy.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Éric Vinícius</h5>
+                    
+                    <a href="#" class="btn btn-success">Conheça-me</a>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-img-top" src="http://panificadoramarcelo.cl/wp-content/uploads/2017/02/default-avatar-plaid-shirt-guy.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Glhazyanno Linhares</h5>
+                    
+                    <a href="#" class="btn btn-success">Conheça-me</a>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-img-top" src="http://panificadoramarcelo.cl/wp-content/uploads/2017/02/default-avatar-plaid-shirt-guy.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Idelfrides Jorge</h5>
+                    
+                    <a href="#" class="btn btn-success">Conheça-me</a>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-img-top" src="http://panificadoramarcelo.cl/wp-content/uploads/2017/02/default-avatar-plaid-shirt-guy.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Jairo Chaves</h5>
+                    
+                    <a href="#" class="btn btn-success">Conheça-me</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <table class="table table-borderless text-center">
+                <thead>
+                    <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Vertente</th>
+                    <th scope="col">Naturalidade</th>
+                    <th scope="col">Hobbies</th>
+                    <th scope="col">Objetivo de vida</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
 
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 
 

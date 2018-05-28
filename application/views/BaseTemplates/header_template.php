@@ -1,5 +1,6 @@
 
 <?php
+
 /**
  * Created by PhpStorm.
  * User: idelf
@@ -10,8 +11,8 @@
  *
  * Descrition: this file contain the base header HTML script for all app pages
  */
-   //session_start();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,7 +25,14 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo  base_url("static/img/favicon.png");?> ">
+
+    <!--  bootstrap css -->
+    <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/img/favicon.png");?>">
 
     <!--  bootstrap css -->
     <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
