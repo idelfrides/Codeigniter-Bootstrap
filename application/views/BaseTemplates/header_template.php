@@ -1,14 +1,6 @@
 
 <?php
-/**
- * Created by PhpStorm.
- * User: idelf
- * Date: 23/05/2018
- * Time: 11:42
- *
- * @author: idelfrides Jorge
- * Descrition: this file contain the base header HTML script for all app pages
- */
+
 
    //session_start();
 
@@ -25,11 +17,11 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/_img/favicon.png");?> ">
+    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/img/favicon.png");?>">
 
     <!--  bootstrap css -->
     <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
-    <link rel="stylesheet" href="<?=base_url("Assets/_css/header-footer-style.css");?>">
+    <link rel="stylesheet" href="<?=base_url("static/css/header-footer-style.css");?>">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
