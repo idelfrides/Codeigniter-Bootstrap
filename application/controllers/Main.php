@@ -17,10 +17,11 @@ class Main extends CI_Controller
             redirect("welcome");
         }
 
-        $data['title'] = ucfirst($page);        // Capitalize
-        //$data['row'] = $this->dadosMembro();    // recupera dados do membro
-       // $dados['row'] = $this->dadosMembro();    // recupera dados do membro
-
+        $data['title'] = ucfirst($page);            // Capitalize
+        // $data['row'] = $this->dadosMembro();     // recupera dados do membro
+        // $dados['row'] = $this->dadosMembro();    // recupera dados do membro
+        $this->db->select('*');
+        $data['row'] = $this->db->get_where('membro', array('idmembro' => 3));
         $this->load->view('BaseTemplates/header_template', $data);
         if ($status == 1){
             $this->load->view('_include/msg_success');
@@ -33,7 +34,6 @@ class Main extends CI_Controller
         $this->load->view('BaseTemplates/footer_template', $data);
     }
 
-
     // não aplicada
     public function contatarMembro(){
         $this->load->controller('Membro');
@@ -41,19 +41,16 @@ class Main extends CI_Controller
         $mbro->contactMember();
     }
 
-
     public function dadosMembro(){
-        //$this->load->controller('Membro');
+        // $this->load->controller('Membro');
         $mbro = new Membro();
         $data = $mbro->showData();
         return $data;
     }
 
-
     public function PageNotFound(){
         redirect("welcome");
     }
-
 
     /*
      * $this->load->view('BaseTemplates/header_template', $data);
@@ -61,4 +58,5 @@ class Main extends CI_Controller
        $this->load->view('BaseTemplates/footer_template', $data);
 
      */
+
 }

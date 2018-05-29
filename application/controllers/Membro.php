@@ -22,7 +22,7 @@ class Membro extends CI_Controller
 
     public function contactMember()
     {
-        $numMember = 4;   // numero de membros
+        $numMember = 7;   // numero de membros
 
         $dadosForm['nome'] = $this->input->post('InputName');
         $dadosForm['email'] = $this->input->post('InputEmail');
@@ -63,9 +63,9 @@ class Membro extends CI_Controller
         echo 'Objetivo de Vidade:  '.$row->objetivoVida. '<br><br><br>';
 */
 
-        //$this->load->view('app_pages/sobre', $dados);
-        //redirect('main/view/sobre', $row);
-        return $row;
+        //$this->load->view('app_pages/showDataMember', $row);
+        redirect('main/view/showDataMember', $row);
+       // return $row;
 
        // print_r($row);
 

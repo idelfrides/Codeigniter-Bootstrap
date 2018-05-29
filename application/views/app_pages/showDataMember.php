@@ -1,7 +1,10 @@
 
 <br><br><br>
 
+<?php
 
+
+?>
 
 <!-- Title page -->
 <div class="container" id="lorem">
@@ -93,7 +96,7 @@
                         <td>lorem</td>
                         <td>lorem</td>
                         <td>lorem</td>
-                        <td>lorem</td>
+                        <td><?php echo $row->objetivoVida ;?></td>
                     </tr>
                 </tbody>
             </table>

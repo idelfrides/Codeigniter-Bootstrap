@@ -52,7 +52,7 @@
 <body>
 
 <div>
-    <img class="img-thumbnail" alt="imagem teste" src="http://localhost/Sistem-Codeigniter-Bootstrap/static/img/slide-02.jpg">
+    <img class="img-thumbnail" alt="imagem teste" src="http://localhost/Sistem-Codeigniter-Bootstrap/Assets/img/slide-02.jpg">
 </div>
 
 <!-- navbar -->
