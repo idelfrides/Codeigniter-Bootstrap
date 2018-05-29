@@ -26,39 +26,40 @@
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="InputName">Nome*:</label>
-                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Digite seu nome." required>
+                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Digite seu nome.">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="InputEmail">Email*:</label>
-                                <input type="email" class="form-control" name="InputEmail" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite seu E-mail." required>
+                                <input type="text" class="form-control" name="InputEmail" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite seu E-mail.">
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-12">
-                                <label for="InputCid">Destinatário*:</label>
-                                <select name="InputCid" class="form-control" id="InputCid" required>
-                                    <option value="0">Selecione...</option>
-                                    <option value="1">Todos os Membros</option>
-                                    <option value="2">Éric Vinícius</option>
-                                    <option value="3">Glhazyanno Linhares</option>
-                                    <option value="4">Idelfrides Jorge</option>
-                                    <option value="5">Jairo Chaves</option>
+                                <label for="InputDest">Destinatário*:</label>
+                                <select name="InputDestinat" class="form-control" id="InputDest">
+                                    <option value="-1" selected>Selecione...</option>
+                                    <option value="0">Todos os Membros</option>
+                                    <option value="1">Éric Vinícius</option>
+                                    <option value="2">Glhazyanno Linhares</option>
+                                    <option value="3">Idelfrides Jorge</option>
+                                    <option value="4">Jairo Chaves</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="exampleFormControlTextarea1">Mensagem*:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"  name="InputMsg" rows="3"></textarea>
                             </div>
-                            
                         </div>
+
                         <div class="row col-12 mx-auto  pt-2">
                             <button type="submit" class="btn btn-info col-4 mx-auto mb-5">Enviar</button>
                         </div>
+
                     </div>
                 </form>
             </div>

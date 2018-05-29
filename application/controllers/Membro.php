@@ -25,13 +25,13 @@ class Membro extends CI_Controller
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
 
-        if ($dadosForm['destinatario'] == 0) {   // para todos os membros
+        if ($dadosForm['destinatario'] == 0) {      // para todos os membros
 
             for ($dest = 1; $dest <= $numMember; $dest++ ){
                 $dadosForm['destinatario'] = $dest;
                 $dbo->contactAllMember($dadosForm, 0);  // para todos os membros
             }
-
+            redirect('main/view/home/1');
         }else{
             $dbo->contactOneMember($dadosForm);  // para um só  membro
         }
