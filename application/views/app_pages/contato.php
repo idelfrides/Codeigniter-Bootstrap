@@ -40,7 +40,7 @@
                             <div class="form-group col-12">
                                 <label for="InputDest">Destinatário*:</label>
                                 <select name="InputDestinat" class="form-control" id="InputDest">
-                                    <option value="-1" selected>Selecione...</option>
+                                    <option selected>Selecione...</option>
                                     <option value="0">Todos os Membros</option>
                                     <option value="1">Éric Vinícius</option>
                                     <option value="2">Glhazyanno Linhares</option>

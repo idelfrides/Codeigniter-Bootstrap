@@ -37,9 +37,9 @@ class UserDBModel extends CI_Model
            $query = $this->db->insert('contatounico', $dada);
         }
         if ($query){
-            redirect('main/view/home/1');   // consulta bem sucedida
+            redirect('main/view/contato/1');   // consulta bem sucedida
         }else{
-            redirect('main/view/home/2');   // config alert aqui: erro ao inserir dados na tabela membro
+            redirect('main/view/contato/2');   // config alert aqui: erro ao inserir dados na tabela membro
         }
     }
 
@@ -52,25 +52,33 @@ class UserDBModel extends CI_Model
             $errorFlag = 0;
         }else{
             $errorFlag = $errorFlag + 1;
-            redirect('main/view/home/2');   // config alert aqui: erro ao inserir dados na tabela membro
+            redirect('main/view/contato/2');       // config alert aqui: erro ao inserir dados na tabela membro
         }
     }
 
     //Função para recuperar udados dos membros
-    public function showData($member_name = null) {
-        if ($member_name !== null) {
-            $query = $this->db->get('membro');  // tabela: empresario
-            return $query->result_array();
-        }
+    public function getMemberData($member_id) {
 
-        $query = $this->db->get_where('membro', array('nome' => $member_name));
-
-        return $query->row_array();
+        /*$tabela = $this->db->get('membro');          // tabela: empresario
+          $query = $this->db->get_where('membro', array('idmembro' => $member_id));
+          return $query->row(); */
 
         /*
             $sql = "SELECT * FROM some_table WHERE id IN ? AND status = ? AND author = ?";
             $this->db->query($sql, array(array(3, 6), 'live', 'Rick'));
         */
+
+        //$query = $this->db->query("SELECT * FROM tecweb.membro WHERE $iember_id ==;");
+        $sql = "SELECT * FROM tecweb.membro  WHERE membro.idmembro = ?";
+        $query = $this->db->query($sql, array($member_id));
+        if ($query){
+            $row = $query->row();
+            return $row;
+        }else{
+            $error = $this->db->error(); // Has keys 'code' and 'message'
+            echo $error;
+        }
+
     }
 
 }
