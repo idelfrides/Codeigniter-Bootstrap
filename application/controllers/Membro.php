@@ -22,7 +22,9 @@ class Membro extends CI_Controller
 
     public function contactMember()
     {
+
         $numMember = 7;   // numero de membros
+
 
         $dadosForm['nome'] = $this->input->post('InputName');
         $dadosForm['email'] = $this->input->post('InputEmail');
