@@ -11,7 +11,7 @@
  */
 ?>
 
-<div class="bg-dark">
+<div class="bg-dark py-5">
     <div class="col-12  py-1">
         <div class="mybordercopy"></div>
         <blockquote class="blockquote text-center text-white">

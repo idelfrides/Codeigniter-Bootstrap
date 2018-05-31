@@ -14,10 +14,10 @@
                           Form vacancies
     **************************************************************** -->
     <br>
-    <div class="title-content-page mt-5 pt-3" id="bg-card">
+    <div class="title-content-page mt-4 pt-3" id="bg-card">
         <div class="container pb-5">
-            <div class="row col-12">
-                <h3 class="display-4 mx-auto">Deixe-nos uma mensagem!</h3>
+            <div class="row col-12 mb-4">
+                <h3 class="display-4 mx-auto text-muted">Deixe-nos uma mensagem!</h3>
             </div>
             <br>
             <div class="row">
@@ -26,23 +26,20 @@
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="InputName">Nome*:</label>
-
-                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Digite seu nome.">
-
+                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Digite seu nome." required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="InputEmail">Email*:</label>
-
-                                <input type="text" class="form-control" name="InputEmail" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite seu E-mail.">
+                                <input type="text" class="form-control" name="InputEmail" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite seu E-mail." required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="InputDest">Destinatário*:</label>
-                                <select name="InputDestinat" class="form-control" id="InputDest">
-                                    <option selected>Selecione...</option>
+                                <select name="InputDestinat" class="form-control" id="InputDest" required>
+                                    <option value="-1" selected>Selecione...</option>
                                     <option value="0">Todos os Membros</option>
                                     <option value="1">Éric Vinícius</option>
                                     <option value="2">Glhazyanno Linhares</option>
@@ -54,21 +51,18 @@
                         <div class="row">
                             <div class="form-group col-12">
                                 <label for="exampleFormControlTextarea1">Mensagem*:</label>
-
-                                <textarea class="form-control" id="exampleFormControlTextarea1"  name="InputMsg" rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"  name="InputMsg" rows="3" required></textarea>
                             </div>
                         </div>
 
                         <div class="row col-12 mx-auto  pt-2">
                             <button type="submit" class="btn btn-info col-4 mx-auto mb-5">Enviar</button>
                         </div>
-
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
 <br><br><br>
 <br><br><br>
 <br><br><br>

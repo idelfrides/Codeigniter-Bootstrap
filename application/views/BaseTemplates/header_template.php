@@ -25,11 +25,7 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/img/favicon.png");?>">
-
-    <!--  bootstrap css -->
-    <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
 
     <!--  bootstrap css -->
     <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
@@ -51,20 +47,12 @@
 </head>
 <body>
 
-<div>
-    <img class="img-thumbnail" alt="imagem teste" src="http://localhost/Sistem-Codeigniter-Bootstrap/Assets/img/slide-02.jpg">
-</div>
-
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #346d8d;">
     <div class="container">
         <a href="<?=base_url("main/view/home");?>" id="home-style">
-            <img id="icon-home" src="http://localhost/Sistem-Codeigniter-Bootstrap/static/img/slide-01.jpg" width="40" height="40" title="Home" style="background-color: transparent;">
+            <img id="icon-home" src="http://localhost/Sistem-Codeigniter-Bootstrap/static/img/home.png" width="40" height="40" title="Home" style="background-color: transparent;">
         </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto" id="navbarSite2">
@@ -79,3 +67,4 @@
     </div>
 </nav>
 
+<br>

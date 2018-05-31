@@ -7,24 +7,18 @@
  * Time: 21:58
  *
  * Arquivo class Membro - Controller Membro
- * <?php echo $row->nome ;?>
- * <?php echo $row->idade ;?>
- * <?php echo $row->curso ;?>
- * <?php echo $row->vertente ;?>
- * <?php echo $row->naturalidade ;?>
- * <?php echo $row->hobbies ;?>
- * <?php echo $row->objetivoVida ;?>
+ *
  */
 
 
 class Membro extends CI_Controller
 {
-
+    /*
+     * método de inserção de dados vindo odo form de contato aos membros
+     */
     public function contactMember()
     {
-
-        $numMember = 7;   // numero de membros
-
+        $numMember = 4;   // numero de membros
 
         $dadosForm['nome'] = $this->input->post('InputName');
         $dadosForm['email'] = $this->input->post('InputEmail');
@@ -34,47 +28,45 @@ class Membro extends CI_Controller
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
 
-        if ($dadosForm['destinatario'] == 0) {      // para todos os membros
+        if ($dadosForm['destinatario'] == 0) {       // para todos os membros
 
             for ($dest = 1; $dest <= $numMember; $dest++ ){
                 $dadosForm['destinatario'] = $dest;
                 $dbo->contactAllMember($dadosForm, 0);  // para todos os membros
             }
+
             redirect('main/view/contato/1');
+
+        }elseif ($dadosForm['destinatario'] >= 1){
+            $dbo->contactOneMember($dadosForm);       // para um só  membro
         }else{
-            $dbo->contactOneMember($dadosForm);  // para um só  membro
+            redirect('main/view/contato/3');      // destinatário não selecionado
         }
     }
 
+    /*
+     * método de exibição de dados sobre os membros
+     */
     public function showData()
     {
         $idMemberInfo = $this->input->post('auxInput');
 
         $this->load->model('userdbmodel');
         $dbo = new UserDBModel();
-
         $row = $dbo->getMemberData($idMemberInfo);
-/*
-        echo 'codigo dest:  '.$idMemberInfo.'<br>';
-        echo 'Nome: '. $row->nome . '<br>';
-        echo 'Idade: '. $row->idade. '<br>';
-        echo 'Curso: '.$row->curso. '<br>';
-        echo 'Vertente: '.$row->vertente. '<br>';
-        echo 'Naturalidade: '.$row->naturalidade. '<br>';
-        echo 'Hobby: '.$row->hobbies. '<br>';
-        echo 'Objetivo de Vidade:  '.$row->objetivoVida. '<br><br><br>';
-*/
 
-        //$this->load->view('app_pages/showDataMember', $row);
-        redirect('main/view/showDataMember', $row);
-       // return $row;
+        $dados['nome'] = $row->nome;
+        $dados['idade'] = $row->idade;
+        $dados['curso'] = $row->curso;
+        $dados['vertente'] = $row->vertente;
+        $dados['naturalidade'] = $row->naturalidade;
+        $dados['hobbies'] = $row->hobbies;
+        $dados['objetivoVida'] = $row->objetivoVida;
 
-       // print_r($row);
+        $this->load->view('BaseTemplates/header_template');
+        $this->load->view('app_pages/showDataMember', $dados);
+        $this->load->view('BaseTemplates/footer_template');
 
-
-
-       // print_r($dbo->getMemberData('wm'));
     }
-
 
 }

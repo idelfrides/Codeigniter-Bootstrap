@@ -71,20 +71,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Bem vindo ao Sistema CI&BT4!</h1>
 
 	<div id="body">
-        <p>Welcome to  to a CodeIgniter wiht bootstrap 4.0 project.</p>
+        <p>The page you are trying to access IS NOT FOUND.</p>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-		<p>This is the WELCOME PAGE. <br> You are welcome and God bless you ever.</p>
+		<p>This is the WELCOME PAGE. <br> ARe welcome and God bless you ever.</p>
 
-        <!--<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code> -->
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+       	<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+    <div>
+        <?php
+            show_404();
+        ?>
+    </div>
 </div>
 
 </body>

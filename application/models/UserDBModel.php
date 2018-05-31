@@ -22,7 +22,6 @@ class UserDBModel extends CI_Model
         $this->load->database();
     }*/
 
-
     /* Códigos de controle de alert:
      * 1 -> Operação realizada c/ sucesso
      * 2 -> Erro ao realizar operação
@@ -32,7 +31,7 @@ class UserDBModel extends CI_Model
     // guarda mensagem enviada para um único membro
     public function contactOneMember($dada = null){
         if ($dada == null){
-            show_404();                        // não será executada
+            redirect('welcome/page404');                        // não será executada
         }else{
            $query = $this->db->insert('contatounico', $dada);
         }
@@ -45,9 +44,7 @@ class UserDBModel extends CI_Model
 
     // salva mensagem para todos os membros
     public function contactAllMember($dada = null, $errorFlag = 0){
-
         $query = $this->db->insert('contatounico', $dada);
-
         if ($query){
             $errorFlag = 0;
         }else{
@@ -59,26 +56,20 @@ class UserDBModel extends CI_Model
     //Função para recuperar udados dos membros
     public function getMemberData($member_id) {
 
-        /*$tabela = $this->db->get('membro');          // tabela: empresario
-          $query = $this->db->get_where('membro', array('idmembro' => $member_id));
-          return $query->row(); */
-
-        /*
-            $sql = "SELECT * FROM some_table WHERE id IN ? AND status = ? AND author = ?";
-            $this->db->query($sql, array(array(3, 6), 'live', 'Rick'));
-        */
-
-        //$query = $this->db->query("SELECT * FROM tecweb.membro WHERE $iember_id ==;");
         $sql = "SELECT * FROM tecweb.membro  WHERE membro.idmembro = ?";
-        $query = $this->db->query($sql, array($member_id));
-        if ($query){
-            $row = $query->row();
-            return $row;
-        }else{
-            $error = $this->db->error(); // Has keys 'code' and 'message'
-            echo $error;
-        }
+        $consulta = $this->db->query($sql, array($member_id));
+        if ($consulta){
+            $row = $consulta->row();
+            if (isset($row)){
+                return $row;
+            }else{
+                redirect('main/view/sobre/4');
+            }
 
+        }else{
+            redirect('main/view/sobre/4');
+        }
     }
+
 
 }
