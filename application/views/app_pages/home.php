@@ -13,7 +13,7 @@
 <!-- ***************************************************************
                         members section
 **************************************************************** -->
-<div class="title-content-page mt-4" id="bg-card">
+<div class="title-content-page mt-4">
     <div class="container-fluid pb-5">
         <div class="row">
             <div class="card col-8 col-sm-6 col-md-3 col-xl-2 mb-4 ml-auto mr-auto ml-lg-auto mr-lg-0 col-xl-3">

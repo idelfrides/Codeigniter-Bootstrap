@@ -45,7 +45,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body id="bg-page">
 
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #346d8d;">

@@ -1,6 +1,6 @@
 
 <br>
-<div style="display: none;position: absolute; margin-left: 42%; width: 50%;" id="sucsessAlert" class="alert alert-success alert-dismissible navbar-fixed-top alerta mt-3" role="alert">
+<div style="display: none;position: absolute; margin-left: 42%; width: 50%;" id="sucsessAlert" class="alert alert-success alert-dismissible navbar-fixed-top mt-3" role="alert">
     <button  type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>

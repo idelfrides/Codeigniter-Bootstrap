@@ -11,10 +11,10 @@
  */
 ?>
 
+<div class="myborderfooter" style="height: auto;  border-top: 10px solid #6f42c1;" ></div>
 <div class="bg-dark py-5">
     <div class="col-12  py-1">
-        <div class="mybordercopy"></div>
-        <blockquote class="blockquote text-center text-white">
+         <blockquote class="blockquote text-center text-white">
             <footer>Copyright &copy;&nbsp;2018 &nbsp;|&nbsp; Todos os direitos reservados.</footer>
         </blockquote>
     </div>
