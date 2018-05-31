@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <table class="table text-cente table-dark table-striped">
+            <table class="table text-cente table-dark table-striped table-hover">
                 <thead>
                     <tr>
                     <th scope="col">Nome</th>

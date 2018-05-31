@@ -25,12 +25,12 @@
     <meta name="keywords" content="HTML,CSS,Bootstrap 4, jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/img/favicon.png");?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?=base_url("static/img/favicon.png") ;?>">
 
     <!--  bootstrap css -->
     <link rel="stylesheet" href="<?=base_url("static/css/bootstrap.min.css");?>">
 
-    <link rel="stylesheet" href="<?=base_url("static/css/header-footer-style.css");?>">
+    <link href="<?=base_url("static/css/header-footer-style.css");?>" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">

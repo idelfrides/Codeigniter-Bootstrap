@@ -29,7 +29,7 @@
                     <h5 class="card-title">Éric Vinícius</h5>
                     <form  class="" action="<?=base_url("membro/showData");?>" method="post">
                         <input type="hidden" value="1" name="auxInput">
-                        <input type="submit" class="btn btn-success" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
+                        <input type="submit" class="btn btn-info" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
                     </form>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <h5 class="card-title">Glhazyanno Linhares</h5>
                     <form  class="" action="<?=base_url("membro/showData");?>" method="post">
                         <input type="hidden" value="2" name="auxInput">
-                        <input type="submit" class="btn btn-success" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
+                        <input type="submit" class="btn btn-info" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
                     </form>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                     <h5 class="card-title">Idelfrides Jorge</h5>
                     <form  class="" action="<?=base_url("membro/showData");?>" method="post">
                         <input type="hidden" value="3" name="auxInput">
-                        <input type="submit" class="btn btn-success" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
+                        <input type="submit" class="btn btn-info" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
                     </form>
                 </div>
             </div>
@@ -59,13 +59,13 @@
                     <h5 class="card-title">Jairo Chaves</h5>
                     <form  class="" action="<?=base_url("membro/showData");?>" method="post">
                         <input type="hidden" value="4" name="auxInput">
-                        <input type="submit" class="btn btn-success" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
+                        <input type="submit" class="btn btn-info" value="&nbsp;&nbsp;&nbsp;Conheça-me&nbsp;&nbsp;&nbsp;">
                     </form>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
-            <table class="table table-borderless text-center">
+            <table class="table text-center table-bordered table-hover">
                 <thead>
                     <tr>
                     <th scope="col">Nome</th>
@@ -79,13 +79,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
-                        <td>lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
                     </tr>
                 </tbody>
             </table>
