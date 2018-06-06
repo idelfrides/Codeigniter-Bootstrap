@@ -65,11 +65,9 @@ class UserDBModel extends CI_Model
             }else{
                 redirect('main/view/sobre/4');
             }
-
         }else{
             redirect('main/view/sobre/4');
         }
     }
-
 
 }
